@@ -1,0 +1,30 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: calc(100% - 300px);
+}
+
+.buttons > button {
+    // width: 150px;
+    padding: 10px;
+    background-color: #22cc7d;
+    // background-color: black;
+    color: white;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.cookieContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cookieContainer > .cookie {
+    width: 200px;
+    height: 200px;
+}
