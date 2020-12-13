@@ -16,13 +16,17 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      cookieType: rawPaths[0]
+      cookieType: rawPaths[0],
+      bgColor: "red"
     }
   }
 
   changeCookie = param => {
     this.setState({cookieType: rawPaths[param]})
-    
+  }
+
+  changeColor = () => {
+    this.setState({bgColor: "blue"})
   }
 
   render() {
@@ -36,6 +40,8 @@ export default class App extends Component {
           <button onClick={() => this.changeCookie(2)}>Turn me Snickerdoodle</button>
         </div>
         <Cookie path={this.state.cookieType} />
+        <div className={this.state.bgColor}></div>
+        <button onClick={this.changeColor}></button>
       </div>
     );
   }
